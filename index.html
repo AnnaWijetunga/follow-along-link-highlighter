@@ -42,6 +42,9 @@
         const linkCoords = this.getBoundingClientRect();
         // gives us all the info about where on the page this thing lives
         console.log(linkCoords);
+        // grab the height and width data
+        highlight.style.width = `${linkCoords.width}px`;
+        highlight.style.height = `${linkCoords.height}px`;
     }
 
     // event listener to listen for a mouse enter, triggers highlight feature
