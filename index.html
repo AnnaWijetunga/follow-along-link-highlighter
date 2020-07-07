@@ -38,7 +38,10 @@
     document.body.append(highlight);
 
     function highlightLink() {
-        console.log('hightlight');
+        // console.log('hightlight');
+        const linkCoords = this.getBoundingClientRect();
+        // gives us all the info about where on the page this thing lives
+        console.log(linkCoords);
     }
 
     // event listener to listen for a mouse enter, triggers highlight feature
